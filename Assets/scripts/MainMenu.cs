@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour {
 	public bool levelTwoBtn;
 	public bool levelThreeBtn;
 	public bool scoresBtn;
-
+	public bool quitBtn;
 	void OnMouseUp(){
 		if (levelOneBtn) {
 			SceneManager.LoadScene("Level1", LoadSceneMode.Single);
