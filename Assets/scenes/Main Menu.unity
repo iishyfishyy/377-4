@@ -185,6 +185,7 @@ GameObject:
   - component: {fileID: 955713417}
   - component: {fileID: 955713420}
   - component: {fileID: 955713419}
+  - component: {fileID: 955713421}
   m_Layer: 0
   m_Name: Scores
   m_TagString: Untagged
@@ -281,6 +282,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb73f3e3af893ac4f93a8e008080e535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &955713421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 955713415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71b94ead83a4d574fb8d62c48ecc2deb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelOneBtn: 0
+  levelTwoBtn: 0
+  levelThreeBtn: 0
+  scoresBtn: 1
 --- !u!1 &1039771389
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,6 +309,7 @@ GameObject:
   - component: {fileID: 1039771391}
   - component: {fileID: 1039771394}
   - component: {fileID: 1039771393}
+  - component: {fileID: 1039771395}
   m_Layer: 0
   m_Name: Level 2
   m_TagString: Untagged
@@ -389,6 +406,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb73f3e3af893ac4f93a8e008080e535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1039771395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1039771389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71b94ead83a4d574fb8d62c48ecc2deb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelOneBtn: 0
+  levelTwoBtn: 1
+  levelThreeBtn: 0
+  scoresBtn: 0
 --- !u!1 &1280229233
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,6 +433,7 @@ GameObject:
   - component: {fileID: 1280229235}
   - component: {fileID: 1280229238}
   - component: {fileID: 1280229237}
+  - component: {fileID: 1280229239}
   m_Layer: 0
   m_Name: Level 3
   m_TagString: Untagged
@@ -497,6 +530,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb73f3e3af893ac4f93a8e008080e535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1280229239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1280229233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71b94ead83a4d574fb8d62c48ecc2deb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelOneBtn: 0
+  levelTwoBtn: 0
+  levelThreeBtn: 1
+  scoresBtn: 0
 --- !u!1 &1351192603
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,6 +731,7 @@ GameObject:
   - component: {fileID: 1371773720}
   - component: {fileID: 1371773723}
   - component: {fileID: 1371773722}
+  - component: {fileID: 1371773724}
   m_Layer: 0
   m_Name: Level 1
   m_TagString: Untagged
@@ -779,6 +828,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb73f3e3af893ac4f93a8e008080e535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1371773724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1371773718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71b94ead83a4d574fb8d62c48ecc2deb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelOneBtn: 1
+  levelTwoBtn: 0
+  levelThreeBtn: 0
+  scoresBtn: 0
 --- !u!1 &1753546209
 GameObject:
   m_ObjectHideFlags: 0
