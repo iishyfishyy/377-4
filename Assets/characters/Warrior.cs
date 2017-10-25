@@ -2,10 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Character : MonoBehaviour{
-	public int mana;
-	public int health;
-	public int damage; 
+public class Warrior : Character {
 
 	// Use this for initialization
 	void Start () {
