@@ -249,6 +249,7 @@ GameObject:
   - component: {fileID: 763120865}
   - component: {fileID: 763120864}
   - component: {fileID: 763120863}
+  - component: {fileID: 763120866}
   m_Layer: 0
   m_Name: Rogue
   m_TagString: Untagged
@@ -334,6 +335,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &763120866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 763120861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c791b037f39490bace80d43f000776, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mana: 0
+  health: 3000
+  damage: 16
+  type: rogue
 --- !u!1 &789730236
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,8 +426,9 @@ GameObject:
   - component: {fileID: 1048842586}
   - component: {fileID: 1048842585}
   - component: {fileID: 1048842583}
+  - component: {fileID: 1048842584}
   m_Layer: 0
-  m_Name: Mookin Druid
+  m_Name: Priest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -442,6 +459,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 15.7, y: 5.8593764, z: 0}
   m_Center: {x: 7.85, y: -2.9296882, z: 0}
+--- !u!114 &1048842584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1048842581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ab104dd5d3742a9bfa4e0e06cb9ab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mana: 0
+  health: 0
+  damage: 0
+  type: 
 --- !u!102 &1048842585
 TextMesh:
   serializedVersion: 3
@@ -449,7 +481,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1048842581}
-  m_Text: 'Druid:'
+  m_Text: 'Priest:'
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -553,6 +585,7 @@ MonoBehaviour:
   mana: 0
   health: 0
   damage: 0
+  type: 
 --- !u!102 &1088556935
 TextMesh:
   serializedVersion: 3
@@ -560,7 +593,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1088556931}
-  m_Text: 'Mage: '
+  m_Text: 'Warrior: '
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -811,8 +844,9 @@ GameObject:
   - component: {fileID: 1231034849}
   - component: {fileID: 1231034848}
   - component: {fileID: 1231034846}
+  - component: {fileID: 1231034847}
   m_Layer: 0
-  m_Name: Tank
+  m_Name: Mage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -843,6 +877,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 15.7, y: 5.8593764, z: 0}
   m_Center: {x: 7.85, y: -2.9296882, z: 0}
+--- !u!114 &1231034847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1231034844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dedbc73e2cec8425785ff591fcb8f4d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mana: 0
+  health: 0
+  damage: 0
+  type: 
 --- !u!102 &1231034848
 TextMesh:
   serializedVersion: 3
@@ -850,7 +899,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1231034844}
-  m_Text: 'Tank: '
+  m_Text: 'Mage: '
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -1102,9 +1151,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1810232282}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc64620ea57c44e5f99dc25127610641, type: 3}
+  m_Script: {fileID: 11500000, guid: 36ff9fdd7fd66468caddeed258ce579b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mana: 0
+  health: 0
+  damage: 0
+  type: 
 --- !u!102 &1810232286
 TextMesh:
   serializedVersion: 3

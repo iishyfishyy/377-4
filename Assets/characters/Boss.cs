@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boss : Character {
+public class Boss : GameCharacter {
 	
 	// Use this for initialization
-	/*void Start () {
+	void Start () {
+		this.SetType ("Boss");
 		this.health = 4500;
 		this.mana = 0;
 		this.damage = this.damage_dealt ();
@@ -15,32 +16,29 @@ public class Boss : Character {
 	void Update () {
 		this.damage = this.damage_dealt ();	
 		this.receive_damage ();
-
-		this.health -= this.damage;
 		base.Update ();
 	}
 
-	protected override int damage_dealt (){
-		foreach (var item in allies) {
-			if (item.GetType ().Equals ("Warrior")) {
-				item.health -= GetRandomNumber (45, 55);
+	public  override int damage_dealt (){
+		foreach (GameCharacter c in allies) {
+			if (c.GetType().Equals ("Warrior")) {
+				c.health -= GetRandomNumber (45, 55);
 			} else {
-				item.health += GetRandomNumber (5, 20);
+				c.health += GetRandomNumber (5, 20);
 			}
 		}
 		return GetRandomNumber (5, 20);
 	}
 
 	private void receive_damage(){
-		foreach (var item in allies) {
+		foreach (GameCharacter item in allies) {
 			this.health -= item.damage;
 		}
 	}
+		
 
-*/
 
-
-	/*Joefa*/
+	/*Joefa
 	public Boss (){
 		this.health = 4500;
 		this.mana = 0;
