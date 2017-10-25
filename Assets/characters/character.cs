@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class Character : MonoBehaviour{
-	public List<Character> allies;
+	public static List<Character> allies;
 
 	public int mana;
 	public int health;
@@ -18,19 +18,20 @@ public abstract class Character : MonoBehaviour{
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	public void Update () {
+		TextMesh t = (TextMesh)gameObject.GetComponent (typeof(TextMesh));
+		t.text = "Boss: " + this.health.ToString();
 	}
 
 	private void add_ally(Character a){
-		allies.Add (a);
+		allies.Add(a);
 	}
 
 	private void remove_ally (Character a){
 		allies.Remove(a);
 	}
 
-	protected virtual int damage_dealt (){return 0;}
+	protected abstract int damage_dealt ();
 
 
 	//Function to get random number

@@ -14,6 +14,8 @@ public class Boss : Character {
 	// Update is called once per frame
 	void Update () {
 		this.damage = this.damage_dealt ();	
+		this.health -= this.damage;
+		base.Update ();
 	}
 
 	protected override int damage_dealt (){
