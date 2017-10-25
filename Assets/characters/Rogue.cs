@@ -20,5 +20,7 @@ public class Rogue : Character{
 		return this.GetRandomNumber (15,20);
 	}
 
+	/*Joefa*/
 
+	/*Joefa*/
 }

@@ -17,10 +17,8 @@ public class Moonkin : Character {
 	}
 
 	protected override int damage_dealt (){
-		return this.GetRandomNumber (1,30);
+		return this.GetRandomNumber (5,15);
 	}
-
-
 
 	/*Joefa*/
 
