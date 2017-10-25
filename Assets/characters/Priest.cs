@@ -5,7 +5,7 @@ using UnityEngine;
 public class Priest : Character {
 
 	// Use this for initialization
-	void Start () {
+	/*void Start () {
 		this.health = 1000;
 		this.mana = 1000;
 		this.damage = this.damage_dealt ();
@@ -21,7 +21,7 @@ public class Priest : Character {
 
 
 	private void regenerate_mana (){
-		this.mana -= 2;
+		this.mana += 2;
 	}
 
 	// Heals damage dealer or priest per time-step
@@ -74,6 +74,33 @@ public class Priest : Character {
 
 
 	/*Joefa*/
+	public Priest (){
+		this.health = 1000;
+		this.mana = 1000;
+		this.damage = 0;
+		this.type = "priest";
+	}
 
+	public override int damage_dealt (Character boss)
+	{
+		boss.health -= damage;
+		return this.damage;
+	}
+
+	//if the heal counter  = 1, means is small heal
+	//if heal counter = 2, mean is big heal
+	public void heal  (Character chars){
+		if (chars.type.Equals ("warrior")) {
+			chars.health += 20;
+			this.mana -= 8;
+		} else {
+			chars.health += 15;
+			this.mana -= 5;
+		}
+	}
+
+	private void regenerate_mana (){
+		this.mana += 2;
+	}
 	/*Joefa*/
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Boss : Character {
 	
 	// Use this for initialization
-	void Start () {
+	/*void Start () {
 		this.health = 4500;
 		this.mana = 0;
 		this.damage = this.damage_dealt ();
@@ -37,10 +37,27 @@ public class Boss : Character {
 		}
 	}
 
-
+*/
 
 
 	/*Joefa*/
+	public Boss (){
+		this.health = 4500;
+		this.mana = 0;
+		this.type = "boss";
+		this.damage = this.GetRandomNumber (5, 20);
+	}
+
+	public override int damage_dealt (Character chars){
+		if (chars.type.Equals ("warrior")) 
+			this.damage = this.GetRandomNumber (45, 55);
+		 else 
+			this.damage = this.GetRandomNumber (5, 20);
+
+		chars.health -= this.damage;
+		return this.damage;
+	}
+
 
 	/*Joefa*/
 }

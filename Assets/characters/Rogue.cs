@@ -5,12 +5,10 @@ using UnityEngine;
 public class Rogue : Character{
 
 	// Use this for initialization
-	void Start () {
+	/*void Start () {
 		this.health = 3000;
 		this.mana = 0;
 		this.damage = this.damage_dealt ();
-		allies.Add (this);
-
 	}
 	
 	// Update is called once per frame
@@ -20,9 +18,20 @@ public class Rogue : Character{
 
 	protected override int damage_dealt (){
 		return this.GetRandomNumber (15,20);
+	}*/
+
+	public Rogue (){
+		this.health = 3000;
+		this.mana = 0;
+		this.type = "rogue";
+		this.damage = this.GetRandomNumber (15, 20);
 	}
 
-	/*Joefa*/
+	public override int damage_dealt (Character boss){
+		this.damage = this.GetRandomNumber(15,20);
+		boss.health -= this.damage;
+		return this.damage;
+	}
 
-	/*Joefa*/
+
 }
