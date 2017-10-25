@@ -21,7 +21,7 @@ public class Priest : Character {
 
 
 	private void regenerate_mana (){
-		this.mana -= 2;
+		this.mana += 2;
 	}
 
 	// Heals damage dealer or priest per time-step
