@@ -19,7 +19,14 @@ public class Warrior : Character {
 	}
 
 	protected override int damage_dealt (){
-		return 5;
+		foreach (var item in allies) {
+			if (item.GetType ().Equals ("Warrior")) {
+				item.health -= GetRandomNumber (45, 55);
+			} else {
+				item.health += GetRandomNumber (5, 20);
+			}
+		}
+		return GetRandomNumber (5, 20);
 	}
 
 
