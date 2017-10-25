@@ -35,7 +35,7 @@ public class Priest : Character {
 			int num_of_damage_dealers = 0;
 
 			foreach (var item in allies) {
-				if (!item.GetType ().Equals (Warrior))
+				if (!item.GetType ().Equals ("Warrior"))
 					num_of_damage_dealers++;
 			}
 
@@ -43,7 +43,7 @@ public class Priest : Character {
 
 			int counter = 0;
 			foreach (var item in allies) {
-				if (!item.GetType ().Equals (Warrior)) {
+				if (!item.GetType ().Equals ("Warrior")) {
 					if (counter == character_getting_healed) {
 						item.health += 15;
 						this.mana -= 5;
@@ -59,7 +59,7 @@ public class Priest : Character {
 	// Heals tanks
 	private void big_heal (){
 		foreach (var item in allies) {
-			if (item.GetType ().Equals (Warrior)) {
+			if (item.GetType ().Equals ("Warrior")) {
 				item.health += 20;
 				this.mana -= 8;
 			}
