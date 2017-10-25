@@ -18,6 +18,7 @@ public class Boss : Character {
 
 	protected override int damage_dealt (){
 		return this.GetRandomNumber (1,30);
+
 	}
 
 

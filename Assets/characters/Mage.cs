@@ -9,6 +9,8 @@ public class Mage : Character {
 		this.health = 1000;
 		this.mana = 0;
 		this.damage = this.damage_dealt ();
+		allies.Add (this);
+
 	}
 
 	// Update is called once per frame
