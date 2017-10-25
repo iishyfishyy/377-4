@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Moonkin : Character {
+public class Moonkin : GameCharacter {
 
 	// Use this for initialization
-	/*void Start () {
+	void Start () {
+		this.SetType ("Moonkin");
 		this.health = 1000;
 		this.mana = 0;
 		this.damage = this.damage_dealt ();
@@ -16,13 +17,14 @@ public class Moonkin : Character {
 	// Update is called once per frame
 	void Update () {
 		this.damage = this.damage_dealt ();	
+		base.Update ();
 	}
 
-	protected override int damage_dealt (){
-		return this.GetRandomNumber (5,15);
+	public override int damage_dealt (){
+		return GetRandomNumber (5,15);
 	}
-	*/
-	/*Joefa*/
+
+	/*Joefa
 	public Moonkin (){
 		this.health = 1000;
 		this.mana = 0;

@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Priest : Character {
+public class Priest : GameCharacter {
 
 	// Use this for initialization
-	/*void Start () {
+	void Start () {
+		this.SetType ("Priest");
 		this.health = 1000;
 		this.mana = 1000;
 		this.damage = this.damage_dealt ();
@@ -17,6 +18,7 @@ public class Priest : Character {
 		this.small_heal ();
 		this.big_heal ();
 		this.regenerate_mana ();
+		base.Update ();
 	}
 
 
@@ -34,7 +36,7 @@ public class Priest : Character {
 		} else {
 			int num_of_damage_dealers = 0;
 
-			foreach (var item in allies) {
+			foreach (GameCharacter item in allies) {
 				if (!item.GetType ().Equals ("Warrior"))
 					num_of_damage_dealers++;
 			}
@@ -42,7 +44,7 @@ public class Priest : Character {
 			int character_getting_healed = this.GetRandomNumber (0, num_of_damage_dealers);
 
 			int counter = 0;
-			foreach (var item in allies) {
+			foreach (GameCharacter item in allies) {
 				if (!item.GetType ().Equals ("Warrior")) {
 					if (counter == character_getting_healed) {
 						item.health += 15;
@@ -58,7 +60,7 @@ public class Priest : Character {
 
 	// Heals tanks
 	private void big_heal (){
-		foreach (var item in allies) {
+		foreach (GameCharacter item in allies) {
 			if (item.GetType ().Equals ("Warrior")) {
 				item.health += 20;
 				this.mana -= 8;
@@ -68,12 +70,12 @@ public class Priest : Character {
 	}
 	
 
-	protected override int damage_dealt (){
+	public override int damage_dealt (){
 		return 0;
 	}
 
 
-	/*Joefa*/
+	/*Joefa
 	public Priest (){
 		this.health = 1000;
 		this.mana = 1000;

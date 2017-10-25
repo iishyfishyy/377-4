@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mage : Character {
+public class Mage : GameCharacter {
 
 	// Use this for initialization
-	/*void Start () {
+	void Start () {
+		this.SetType ("Mage");
 		this.health = 1000;
 		this.mana = 0;
 		this.damage = this.damage_dealt ();
@@ -16,14 +17,15 @@ public class Mage : Character {
 	// Update is called once per frame
 	void Update () {
 		this.damage = this.damage_dealt ();	
-	}/*
+		base.Update ();
+	}
 
-	protected override int damage_dealt (){
+	public  override int damage_dealt (){
 		return this.GetRandomNumber (1,30);
 	}
 
 
-	/*Joefa*/
+	/*Joefa	
 	public Mage (){
 		this.health = 1000;
 		this.mana = 0;
