@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mage : MonoBehaviour {
+public class Mage : Character {
 
 	// Use this for initialization
 	void Start () {
@@ -13,4 +13,7 @@ public class Mage : MonoBehaviour {
 	void Update () {
 		
 	}
+
+
+	
 }
