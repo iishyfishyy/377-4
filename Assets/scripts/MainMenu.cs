@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour {
 
 	void OnMouseUp(){
 		if (levelOneBtn) {
-			SceneManager.LoadScene(1);
+			SceneManager.LoadScene("Level1", LoadSceneMode.Single);
 			GetComponent<Renderer>().material.color = Color.cyan;
 		}
 		if (levelTwoBtn) {
