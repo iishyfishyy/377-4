@@ -506,6 +506,7 @@ GameObject:
   - component: {fileID: 1088556936}
   - component: {fileID: 1088556935}
   - component: {fileID: 1088556933}
+  - component: {fileID: 1088556934}
   m_Layer: 0
   m_Name: Warrior
   m_TagString: Untagged
@@ -538,6 +539,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 15.5, y: 5.8593764, z: 0}
   m_Center: {x: 7.75, y: -2.9296882, z: 0}
+--- !u!114 &1088556934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1088556931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc779f45a119413585464e9e7cbd9e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mana: 0
+  health: 0
+  damage: 0
 --- !u!102 &1088556935
 TextMesh:
   serializedVersion: 3
@@ -1046,6 +1061,7 @@ GameObject:
   - component: {fileID: 1810232287}
   - component: {fileID: 1810232286}
   - component: {fileID: 1810232284}
+  - component: {fileID: 1810232285}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -1078,6 +1094,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 15.7, y: 5.8593764, z: 0}
   m_Center: {x: 7.85, y: -2.9296882, z: 0}
+--- !u!114 &1810232285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1810232282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36ff9fdd7fd66468caddeed258ce579b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mana: 0
+  health: 0
+  damage: 0
 --- !u!102 &1810232286
 TextMesh:
   serializedVersion: 3
